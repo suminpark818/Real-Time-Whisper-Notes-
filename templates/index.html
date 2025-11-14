@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Real-Time Whisper Notes (Flask)</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Real-Time Whisper Notes</h1>
+        <p>Record with your mic, then get transcript and summary.</p>
+
+        <div class="controls">
+            <button id="startBtn">Start Recording</button>
+            <button id="stopBtn" disabled>Stop Recording</button>
+            <span id="status">Idle</span>
+        </div>
+
+        <div class="panel">
+            <h2>Transcript</h2>
+            <pre id="transcript"></pre>
+        </div>
+
+        <div class="panel">
+            <h2>Summary</h2>
+            <pre id="summary"></pre>
+        </div>
+    </div>
+
+    <script src="/static/recorder.js"></script>
+</body>
+</html>
